@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "DeepSeek Dir Auto",
+  "version": "1.0",
+  "description": "DeepSeek RTL support",
+  
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.deepseek.com/*", "*://deepseek.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "info@bonyan.co"
+    }
+  }
+}

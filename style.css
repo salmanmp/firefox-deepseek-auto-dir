@@ -1,0 +1,7 @@
+.ds-message[dir='rtl'] {
+  direction: rtl;
+}
+
+pre, .md-code-block{
+  direction: ltr !important;
+}
